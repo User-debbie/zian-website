@@ -1,0 +1,411 @@
+html,
+body {
+  width: 1920px;
+  height: auto;
+  background-color: white;
+  font: 12px/1 "\u5b8b\u4f53", Tahoma, Geneva, sans-serif;
+  margin: auto;
+  position: relative;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  position: relative;
+}
+.main {
+  margin: auto;
+  position: relative;
+  height: 100%;
+  width: 72.7%;
+  background-color: #e3f6f5;
+  padding: 55px;
+}
+.main_card {
+  height: 100%;
+  width: 100%;
+  background-color: #fbffff;
+  margin: auto;
+  position: relative;
+}
+.card {
+  height: 550px;
+  width: 100%;
+  background-color: #fbffff;
+  margin: auto;
+  position: relative;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 20px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.button span {
+  cursor: pointer;
+  font-weight: bolder;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.more_travel_button {
+  background-color: #ffd803;
+  color: black;
+  display: block;
+  margin: 10px auto;
+}
+.more_travel_button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.more_diary_button {
+  background-color: #ffd803;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+.more_diary_button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+header {
+  height: 300px;
+  width: 100%;
+  background-image: url("../img/banner/welcome_slogan.png");
+  margin: auto;
+  position: relative;
+}
+nav,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  position: relative;
+  right: 0%;
+  top: 20px;
+  width: 30%;
+  height: 60px;
+  background: none;
+  display: inline-block;
+  float: right;
+}
+ul {
+  width: 100%;
+  height: 60px;
+  text-align: left;
+  font-size: 25px;
+}
+li {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  height: 45px;
+  line-height: 60px;
+  cursor: pointer;
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+  font-weight: bolder;
+}
+li:hover {
+  color: #ffd803;
+}
+.move {
+  display: inline-block;
+  border: 2px solid #ffd803;
+  height: 0px;
+  position: relative;
+  left: 0;
+  transition: left 0.4s ease-in-out;
+}
+.move_diary {
+  display: inline-block;
+  border: 2px solid #ffd803;
+  height: 0px;
+  position: relative;
+  left: 0;
+  transition: left 0.4s ease-in-out;
+}
+li:nth-child(1):hover~.move {
+  left: 0;
+}
+li:nth-child(2):hover~.move {
+  left: 20%;
+}
+li:nth-child(3):hover~.move {
+  left: 40%;
+}
+li:nth-child(4):hover~.move {
+  left: 60%;
+}
+ul li a:hover {
+  color: #ffd803;
+}
+.card .inner {
+  height: 400px;
+  width: 100%;
+  background-color: #fbffff;
+  margin-top: 10px;
+  display: flex;
+}
+.card .down_section {
+  height: 550px;
+  width: 100%;
+  background-color: #fbffff;
+  display: flex;
+}
+.card .title {
+  font: 40px Tahoma, Geneva, sans-serif;
+  font-weight: bolder;
+  color: #272343;
+  text-align: center;
+  margin: 10px auto auto auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.card .travel_photo_section {
+  height: 350px;
+  width: 300px;
+  background-color: #fbffff;
+  margin-left: 38px;
+  margin-top: 10px;
+}
+.card .text {
+  height: 530px;
+  width: 300px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.card .text .title {
+  font: 40px/1.5 "Microsoft YaHei", arial, tahoma, \5b8b\4f53, sans-serif;
+  font-weight: bold;
+  color: #272343;
+  margin-top: 40px;
+  margin-left: 40px;
+  width: auto;
+  text-align: left;
+}
+.card .text .date {
+  font: 25px/1.5 "Microsoft YaHei", arial, tahoma, \5b8b\4f53, sans-serif;
+  font-weight: bold;
+  color: #272343;
+  margin-left: 40px;
+  width: auto;
+  text-align: left;
+}
+.card .text .content {
+  font: 20px/1.5 "Microsoft YaHei", arial, tahoma, \5b8b\4f53, sans-serif;
+  font-weight: normal;
+  color: #272343;
+  margin-top: 20px;
+  margin-left: 40px;
+  width: auto;
+  text-align: left;
+}
+.card .photobooth {
+  height: 530px;
+  width: 780px;
+  margin-left: 220px;
+  margin-top: 10px;
+  float: right;
+}
+.card .travel_photo_section .photo {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+}
+.card .travel_photo_section .title {
+  font: 25px/1.5 "Microsoft YaHei", arial, tahoma, \5b8b\4f53, sans-serif;
+  font-weight: bold;
+  color: #272343;
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.card .travel_photo_section .date {
+  font: 20px/1.5 "Microsoft YaHei", arial, tahoma, \5b8b\4f53, sans-serif;
+  font-weight: bold;
+  color: #272343;
+  margin-top: 5px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.small_bar {
+  height: 10px;
+  width: 100%;
+  background-color: #e3f6f5;
+  margin: auto;
+  position: relative;
+}
+.white_bar {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  margin: auto;
+  position: relative;
+}
+footer {
+  background-color: #272343;
+  color: white;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  font-size: 90%;
+  width: 100%;
+}
+a {
+  color: #272343;
+  text-decoration: none;
+}
+.CarouselBox {
+  overflow: hidden;
+  height: 530px;
+  width: 780px;
+  margin-left: 220px;
+  margin-top: 10px;
+  float: right;
+}
+/*设置放置轮播图的盒子*/
+.item {
+  width: 780px;
+  height: 530px;
+  float: right;
+  list-style: none;
+}
+/*对放置图片的li进行设置*/
+/*设置动画的主要属性*/
+.list {
+  width: 2340px;
+  height: 530px;
+  animation: myani 10s 0s alternate ease-in-out infinite;
+  -ms-animation: myani 10s 0s alternate ease-in-out infinite;
+  -moz-animation: myani 10s 0s alternate ease-in-out infinite;
+  -webkit-animation: myani 10s 0s alternate ease-in-out infinite;
+}
+/* 对动画的关键帧进行设置*/
+@keyframes myani {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: -780px;
+  }
+  100% {
+    margin-left: -1560px;
+  }
+}
+/*对动画的关键帧进行兼容处理*/
+.middle {
+  margin: 0 auto;
+}
+.title {
+  font: 30px Tahoma, Geneva, sans-serif;
+  font-weight: bolder;
+  color: #272343;
+  text-align: center;
+  margin: 10px auto auto auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+th {
+  font-size: 20px;
+  background-color: whitesmoke;
+}
+td {
+  min-width: 80px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.detail_content {
+  font: 30px/1.5 "Microsoft YaHei", arial, tahoma, \5b8b\4f53, sans-serif;
+  font-weight: normal;
+  color: #272343;
+  margin-top: 20px;
+  margin-left: 40px;
+  width: auto;
+  text-align: left;
+}
+
+.detail {
+  height: auto;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fbffff;
+  margin: auto;
+  position: relative;
+}
+
+.detail a{
+  text-decoration:underline;
+  font-weight: bolder;
+  color: #272343;
+}
+
+.detail .title{
+ 
+    font: 40px Tahoma, Geneva, sans-serif;
+    font-weight: bolder;
+    color: #272343;
+    text-align: center;
+    margin: 10px auto auto auto;
+    position: relative;
+    width: 100%;
+    height: auto;
+  
+}
+
+.right{
+  font: Tahoma, Geneva, sans-serif;
+  text-align: right;
+  color: #272343;
+  font-weight: bold;
+}
+
+.right input{
+  outline-style: none ;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  width: auto;
+  
+}
+
+.buttonSubmit{
+  outline-style: none ;
+  border: 1px solid #ccc; 
+  width: 5px;
+  background-color: #ffd803;
+  color:#272343;
+  font-weight: bold;
+  border-radius: 5px;
+}
